@@ -1,0 +1,32 @@
+/* CSS Document */
+.bd-content,.frame-nav-inner {width: 860px;}
+.album-list-main {position: relative;width: 860px;border: 1px solid #d1d1d1;border-radius: 3px;margin: 0px auto;background: #fff;}
+.album-list-bar {border-radius: 3px 0 0 3px;width: 100%;background: #f8f8f8;height: 60px;}
+.album-list {width: 860px;overflow: hidden;}
+.album-list .a-b-tab {padding:0px;}
+#album-tab {list-style: none;height: 60px;float: left;margin:0px;padding:0px;}
+.album-ctrl {float: right;line-height: 60px;height: 60px;width: 310px;}
+#album-tab li {float: left;width: 100px;text-align: center;}
+#album-tab .a-b-t {margin: 0 auto;width: 65px;height: 57px;line-height: 57px;display: block;font-size: 14px;color: #666;text-decoration: none;}
+.btn-upload, .btn-create, .btn-del-album, .icon-ai-album, .admin-lock, .d-i-ai:hover .icon-ai-album, .drop-item .drop-i-active .icon-ai-album, .drop-box-arrow {background: url(../image/album_list_sprites.png) no-repeat;}
+.album-btn {float: right;overflow: hidden;height: 35px;margin-top: 12px;}
+.btn-upload {background-position: 0 -75px;}
+.a-b-btn {width: 111px;height: 31px;display: inline-block;line-height: 31px;margin-right: 10px;cursor: pointer;}
+.btn-create {background-position: 0 -107px;}
+.album-list {width: 860px;overflow: hidden;}
+#album-list {list-style: none;overflow: hidden;width: 850px;margin: 20px 5px;}
+#album-tab .a-b-t:hover, #album-tab .a-b-t-hover {border-bottom: 3px solid #227dc5;font-weight: bold;}
+#album-list .album-box {height: 260px;width: 271px;padding-left: 12px;float: left;overflow: hidden;display: block;position: relative;}
+#album-list .album-box:hover .album-bg-single {background: url('../image/album_bg_single_hover.png') no-repeat center center;}
+#album-list .album-box:hover .album-name {color: #227dc5;text-decoration: underline;}
+#album-list .album-bg-single, #album-list .album-bg-lock {background: url('../image/album_bg_single.png') no-repeat center center;}
+#album-list .album-item {display: table-cell;width: 258px;height: 194px;cursor: pointer;text-align: center;vertical-align: middle;zoom: 1;}
+#album-list .album-item img{max-height: 150px;max-width: 250px;}
+.album-count {border-radius: 2px;height: 20px;min-width: 20px;_width: 20px;padding: 5px;text-align: center;background: #000;-ms-filter: "alpha(opacity=60)";filter: alpha(opacity=60);opacity: .6;position: absolute;display: block;bottom: 90px;right: 35px;font-size: 14px;color: #fff;}
+.album-info {width: 240px;height: 20px;margin-top: 10px;margin-left: 9px;}
+.album-name {text-decoration:none; font-size: 13px;color: #333;float: left;width: 140px;cursor: pointer;}
+.album-limit {width: 80px;height: 20px;line-height: 20px;float: right;color: #aaa;text-align: right;}
+#pager {text-align:right;margin-top:20px;}
+
+.album-link-btn{text-decoration: none;color:#999;}
+.album-link-btn:hover {color: #227dc5;text-decoration: underline;}

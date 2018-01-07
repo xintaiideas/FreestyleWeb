@@ -1,0 +1,53 @@
+/* CSS Document */
+img {border:none;}
+ul {margin:0;padding:0;}
+html,body{width:100%;height:100%;overflow:hidden;margin:0;font:12px/18px STHeiti,'Microsoft YaHei',arial;}
+html{_height:auto;_padding:100px 0 50px;}
+/*布局样式*/
+.logo {width:250px;height:45px;margin-top:2px;background:url(../image/logo.png);background-size:100% 100%;display:inline-block;}
+.g-hd,.g-sd,.g-mn{position:absolute;left:0;}
+.g-hd{width:100%;background-color:#227dc5;}
+.g-sd,.g-mn{top:50px;bottom:0px;_height:100%;overflow:auto;}
+.g-hd{top:0;height:50px;}
+.g-sd{width:160px;}
+.g-mn{_position:relative;left:160px;right:0;_top:0;_left:0;_margin-left:160px;}
+.g-sd {background: #e6eaee;box-shadow: -8px 0 2px -7px #D1D1D1 inset;overflow: hidden;border-right: 1px solid #D1D1D1;border-right: none;}
+.g-mn {background: #e6eaee;}
+/*菜单导航样式*/
+.nav {display: block;margin:0px;padding:0px;}
+.nav li {display: list-item;text-align: -webkit-match-parent;height: 52px;}
+.nav li a {display: block;height: 32px;padding: 10px 0 10px 20px;overflow: hidden;zoom: 1;position: relative;}
+.nav li a:hover {text-decoration: none;color: #000;background-color: #cfd9e3;}
+.nav li a .app-icon {margin-right: 11px;vertical-align: middle;border-radius: 4px;float: left;background-image: url(../image/app-icons.png);background-repeat: no-repeat;}
+/*图标*/
+.index {}
+.about-me {background-position: 0 -40px;}
+.person-page {background-position: 0 -80px;}
+.my-ablum {background-position: 0 -120px;}
+.my-friend {background-position: 0 -160px;}
+/*导航标题样式*/
+.app-title {display: inline-block;zoom: 1;margin-right: 15px;color: #333;font-size: 14px;line-height: 32px;vertical-align: middle;
+cursor: pointer;float: left;overflow:hidden;width: 79px;height: 32px;}
+.app-link {background:url(../image/frame-icons-v4.png) no-repeat;	background-position: right -228px;}
+
+/*头部的头像、用户名*/
+.hd-account {float: right;margin-right: 30px;}
+.hd-account dt {float: left;margin-right: 10px;}
+dt {display: block;}
+.hd-account .hd-avatar {border-radius: 2px;}
+.hd-account dd {line-height: 16px;}
+.hd-account .hd-name {font-weight: bold;color: #fff;text-decoration: none;_width: auto;overflow: hidden;display: block;}
+.hd-account .account-operate {color: #84c6ea;text-decoration: none;}
+
+/*通用白色导航条*/
+.frame-nav-fixed-wraper {left:160px;right:0px;height: 50px;box-shadow: 0 4px 4px -3px #d1d1d1;top: 50px;z-index: 100;background: #f3f6f8;position: fixed;}
+.frame-nav-inner {width: 760px;margin:0 auto;height: 50px;z-index: 99;}
+.fd-nav-list {margin:0px;}
+.frame-nav-fixed-wraper .fd-nav-list .fd-nav-item-list {margin-right: 30px;list-style:none;}
+.frame-nav-fixed-wraper .fd-nav-list .fd-nav-item {position: relative;}
+.fd-nav-item {margin-right: 40px;float: left;}
+.frame-nav-fixed-wraper .fd-nav-list .fd-nav-filter {display:inline-block;float: left;line-height: 47px;font-size: 14px;color:#000;text-decoration:none;border-bottom:solid 3px #227dc5;position: relative;}
+
+
+.bd-main {margin-top:50px;}
+.bd-content {margin: 0 auto;padding-top: 15px;padding-bottom:15px;position: relative;}

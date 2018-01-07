@@ -1,0 +1,103 @@
+.window{box-shadow: 0px 0px 5px 5px #888888;border:0;}
+.window, .window-shadow {
+  border-radius: 10px;
+  position: absolute;
+  padding:0;
+}
+.window .window-header{
+  background-color:#288BC2;width: auto!important;
+}
+.window .window-body {
+  border-style: solid;
+  border-width:0;width:auto!important;
+}
+
+.window-shadow {
+  background: none repeat scroll 0 0 #EEEEEE;
+  box-shadow: 2px 2px 3px #EDEDED;display: none!important;
+}
+.messager-window{
+  width: 320px!important;
+}
+
+.window-header .panel-title {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  height: 26px;
+  line-height: 33px;
+  margin-left: 20px;
+}
+
+.panel-tool-close {
+  background: url("images/close.png") no-repeat;
+}
+
+.window .panel-tool a {
+  height: 29px;
+  opacity: 1;
+  width: 29px;
+}
+.window .panel-tool a:hover{background-color:transparent;}
+.window .window-header .panel-tool{
+  height: 29px;margin-right: 3px;
+  margin-top: 0;
+  overflow: hidden;
+  position: absolute;
+  top:0;
+}
+.messager-question {
+  background: url("images/question.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.messager-icon {
+  float: left;
+  height: 48px;
+  margin: 20px 10px 20px 40px;
+  width: 48px;
+}
+
+.messager-error {
+    margin: 30px 10px 20px 40px;
+    width: 32px;
+}
+
+.messager-body>div:nth-child(2){margin: 40px 0 0;color:#288BC2;}
+
+.window-proxy-mask, .window-mask{background-color: #000;}
+.messager-button a.l-btn{background: url("images/btn.png") no-repeat;border: none;height: 32px;width: 72px;padding-right: 0!important;color: #288bc2;}
+.messager-button a.l-btn:HOVER {border: none;background: url("images/btn_hover.png") no-repeat;}
+.messager-button a.l-btn span.l-btn-left{padding: 5px 0 4px 4px;}
+.dialog-button{text-align: center;padding: 10px;}
+.dialog-button a.l-btn{background: url("images/btn.png") no-repeat;border: none;height: 32px;width: 72px;margin: 0 10px!important;}
+.dialog-button a.l-btn:HOVER {border: none;background: url("images/btn_hover.png") no-repeat;}
+.dialog-button a.l-btn .l-btn-text{background: none;padding: 0;color: #288bc2;margin: 4px 0;}
+.dialog-button a.l-btn .icon-ok {background: none;}
+.dialog-button a.l-btn .icon-cancel {background: none;}
+.datagrid-header{background-color:transparent;}
+/* .datagrid-header,.datagrid-htable{height: 35px!important;} */
+.datagrid-header-row, .datagrid-row {height: 30px;}
+.datagrid-header-row td{background-color: #76DCFB;}
+.datagrid-header-row td *{font-weight: bold!important;}
+.datagrid-header-row td.datagrid-header-over{background-color: #76DCFB;}
+.datagrid-row-over{background-color:#f3f3f3;}
+.datagrid-row-selected {background-color:#cdeaf9;}
+.datagrid-header-inner{background-color: #76DCFB;}
+div.datagrid{}
+.datagrid .panel-body {background-color: transparent;}
+.datagrid-toolbar, .datagrid-pager{background-color: transparent;}
+.datagrid-cell, .datagrid-cell-group, .datagrid-header-rownumber, .datagrid-cell-rownumber{padding: 0 5px;}
+.dialog-button a.l-btn span.l-btn-left{padding:0;height: 32px;line-height: 32px;}
+.tree-folder{background: none;width: 2px;}
+.tree-file{background: url("images/bit_out.png") no-repeat;margin-top:5px;width: 12px;}
+.tree-node-hover{color: #47afee;}
+.tree-node-hover .tree-file{background: url("images/bit_move.png") no-repeat;}
+.tree li{margin: 5px 0;}
+
+.tree_icon_menu_folder{background: url("images/bit_close.png") no-repeat;}
+
+.layout-panel>.panel-body{background-color: transparent;}
+
+.layout-panel-west{overflow: visible;}
+.pagination table{float: right;}
+.pagination-info{margin: 0 0 0 6px;float: left;}

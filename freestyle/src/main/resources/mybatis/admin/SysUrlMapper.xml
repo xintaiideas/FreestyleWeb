@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.freestyle.mapper.admin.SysUrlMapper" >
+
+  <resultMap id="BaseResultMap" type="com.freestyle.domain.entity.admin.SysUrl" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
+    <result column="updated_time" property="updatedTime" jdbcType="TIMESTAMP" />
+    <result column="url" property="url" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+  </resultMap>
+  
+  <sql id="Base_Column_List" >
+    id, created_time, updated_time, url, remark
+  </sql>
+
+  <select id="pageSelectByUrl" resultMap="BaseResultMap">
+    select SQL_CALC_FOUND_ROWS 
+    <include refid="Base_Column_List" />
+    from t_sys_url
+    <if test="url != null">
+         where url like concat('%',#{url},'%')
+    </if>
+    limit #{index},#{count}
+  </select>
+  
+  <select id="selectFoundRows" resultType="java.lang.Integer">
+    SELECT FOUND_ROWS()
+  </select>
+  
+  <select id="selectByUrl" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_sys_url
+    <if test="url != null">
+         where url like concat('%',#{url},'%')
+    </if>
+  </select>
+  
+  <insert id="insert">
+    insert into t_sys_url (url, remark) values (#{url}, #{remark})
+  </insert>
+  
+  <select id="select" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_sys_url where id = #{id}
+  </select>
+  
+  <delete id="delete">
+    delete from t_sys_url where id = #{id}
+  </delete>
+  
+  <update id="update">
+    update t_sys_url set url = #{url}, remark = #{remark} where id = #{id}
+  </update>
+</mapper>

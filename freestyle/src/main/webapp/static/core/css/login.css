@@ -1,0 +1,43 @@
+/* CSS Document */
+* {padding:0;margin:0;}
+
+.pointbreak {width:100%;height:100%;position:absolute;object-fit:fill;}
+.mask {position:absolute;width:100%;height:100%;}
+.logo {width:400px;height:80px;position:absolute;left:10%;top:8%;background:url(../image/logo.png);background-size:100% 100%;}
+.login-body {
+	filter:alpha(opacity=80); /*IE滤镜，透明度50%*/
+	-moz-opacity:0.8; /*Firefox私有，透明度50%*/
+	opacity:0.8;/*其他，透明度50%*/
+	position:absolute;
+	width: 340px;
+	height:290px;
+	top:50%;
+	left:50%;
+	margin-left: -220px;
+	margin-top:-160px;
+	padding: 35px 50px;
+	color: #666;
+	border-radius: 4px;			/*圆角*/
+	background: #FFF;
+	box-shadow: 1px 1px 4px #767676;	/*阴影*/
+}
+.login-body a {text-decoration:none;}
+.login-body p {margin-top:25px;margin-bottom:25px;}
+
+/*输入框样式*/
+.input-text {font-size: .875rem;line-height: 1.6;padding: 12px 20px;transition: all .2s;color: #666;border: 1px solid #dce4e6;border-radius: 3px;outline: 0;background: #f3f6f8;width:300px;}
+.input-text:focus {color: #666;border-color: #227dc5;background: #eef1f3;}
+
+/*按钮样式*/
+.btn, .btn a {padding: .4rem 1.2rem;cursor: pointer;transition: all .2s;border: 1px solid transparent;border-radius: 2px;outline: 0;}
+.btn-blue {color: #fff;background: #227dc5;width:100%;height:45px;}
+.btn-blue:hover {background: #2D94E6;}
+
+/*链接样式*/
+.btn-link, .btn-link a {padding: 0;color: #31b968;border: none;border-radius: 0;}
+
+/*记住密码样式*/
+.ck-rem-pwd {display:inline-block;-webkit-appearance: none;background: #fff url(../image/checkbox_uncheck.png);background-size:100% 100%;outline:none;height: 16px;vertical-align: middle;width: 16px;}
+.ck-rem-pwd:checked {background: #fff url(../image/checkbox_checked.png);}
+.lbl-rem-pwd {line-height: 1;display: -webkit-flex;display: -ms-flexbox;display: flex;cursor: pointer;}
+
